@@ -18,20 +18,16 @@
 }
 
 html {
-  /* font-size: 10px; */
+  font-size: 10px;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
 }
-h4{
-  color: #333;
-  font-weight: 700;
-}
+
 p {
   font-size: 1.6rem;
   line-height: 1.5;
-
 }
 
 img {
@@ -39,15 +35,41 @@ img {
 }
 
 .container {
-  max-width: 900px;
+  /* max-width: 900px; */
   margin: 0 auto;
   padding: 0 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(./images/bg.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  color: var(--white);
 }
 
-.box {
-  height: 90vh;
+.title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50rem;
+  background-color: var(--dark-grey);
+  padding: 1rem 0;
 }
 
+.display {
+  width: 50rem;
+  background-color: rgba(90, 9, 94, 0.5);
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.date {
+  background-color: var(--color-primary);
+  padding: 2rem 0;
+}
 a {
   text-decoration: none;
 }
