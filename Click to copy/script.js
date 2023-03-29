@@ -1,14 +1,11 @@
-let coupon = document.querySelector(".coupon");
-let btn = document.querySelector(".btn");
-
-btn.addEventListener("click", clickToCopy)
-
-function clickToCopy(e){
-  e.preventDefault();
-  coupon.select();
-  document.execCommand("copy");
-  btn.textContent = "Copied";
-  setInterval(() => {
-    btn.textContent = "Copy";
-  }, 2000)
+function getUniqueValues(arr) {
+  return arr.reduce((result, value) => {
+    if (!result.includes(value)) {
+      result.push(value);
+    }
+    return result;
+  }, []);
 }
+let myArray = [3, 6, 2, 3, 9, 2, 6, 7];
+let uniqueArray = getUniqueValues(myArray);
+console.log(uniqueArray);

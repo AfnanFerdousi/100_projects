@@ -65,10 +65,6 @@ form {
   font-size: 1.6rem;
 }
 
-label{
-  color: #333;
-}
-
 form > * {
   padding-bottom: 1rem;
 }
@@ -95,8 +91,6 @@ form input,
 
 .result {
   padding: 1rem;
-  color: #333;
-  font-weight: bold;
 }
 
 .reset {
