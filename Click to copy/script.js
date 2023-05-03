@@ -1,11 +1,17 @@
-function getUniqueValues(arr) {
-  return arr.reduce((result, value) => {
-    if (!result.includes(value)) {
-      result.push(value);
-    }
-    return result;
-  }, []);
-}
-let myArray = [3, 6, 2, 3, 9, 2, 6, 7];
-let uniqueArray = getUniqueValues(myArray);
-console.log(uniqueArray);
+const btn = document.querySelector(".btn");
+const coupon = document.querySelector(".coupon");
+
+const copyText = (e) => {
+  e.preventDefault();
+
+  coupon.select();
+  coupon.setSelectionRange(0, 999999);
+  document.execCommand("copy");
+
+  btn.textContent = "Copied!!!";
+  setTimeout(() => {
+    btn.textContent = "Copy";
+  }, 3000);
+};
+
+btn.addEventListener("click", copyText);
