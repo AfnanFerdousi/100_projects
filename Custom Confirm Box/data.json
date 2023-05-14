@@ -1,0 +1,32 @@
+
+ [
+    {
+        "name": "afnan",
+        "age": 17,
+        "gender": "female",
+        "hobby": [
+            {
+                "name": "swim",
+                "time": 8
+            },
+            {
+                "name": "basketball",
+                "time": 20
+            }
+        ]
+    },
+    {
+        "name": "afnan",
+        "age": 17,
+        "gender": "female"
+    },
+    {
+        "name": "afnan",
+        "age": 17,
+        "gender": "female"
+    },{
+        "name": "afnan",
+        "age": 17,
+        "gender": "female"
+    }
+]
