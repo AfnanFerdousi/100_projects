@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="icon"
+      href="https://scontent.fzyl1-1.fna.fbcdn.net/v/t39.30808-6/326292213_1233273087600760_3847057262609278010_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFUqAs-RQCvyc_yN-EOLQqPMmrGBANemdAyasYEA16Z0FcTxavILGK0UyWO89OJj0XpcBJ0dyKdxkHMJaynxsEl&_nc_ohc=OjCmCBuPgTsAX-W2-NQ&_nc_ht=scontent.fzyl1-1.fna&oh=00_AfAIJKG0pUbKJ1Zqx1kvTeWIpc6eN-ZYQ_BgzIpq5a6D2g&oe=63F4D464"
+      type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="box">
+          <h1>BMI Calculator</h1>
+          <hr />
+          <form action="">
+            <div>
+              <label for="">Height (in cm)</label>
+              <input type="text" class="height" placeholder="height" />
+            </div>
+            <div>
+              <label for="">Weight (in kg)</label>
+              <input type="text" class="weight" placeholder="weight" />
+            </div>
+            <button class="btn calc">Calculate</button>
+          </form>
+          <p class="result"></p>
+          <button class="reset">Reset</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

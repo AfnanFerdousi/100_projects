@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon"
+      href="https://scontent.fzyl1-1.fna.fbcdn.net/v/t39.30808-6/326292213_1233273087600760_3847057262609278010_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFUqAs-RQCvyc_yN-EOLQqPMmrGBANemdAyasYEA16Z0FcTxavILGK0UyWO89OJj0XpcBJ0dyKdxkHMJaynxsEl&_nc_ohc=OjCmCBuPgTsAX-W2-NQ&_nc_ht=scontent.fzyl1-1.fna&oh=00_AfAIJKG0pUbKJ1Zqx1kvTeWIpc6eN-ZYQ_BgzIpq5a6D2g&oe=63F4D464"
+      type="image/x-icon" />
+    <title>Notes App</title>
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+    <div class="nav">
+      <div>
+        <a href="https://ostad.app/">
+          <img src="https://i.ibb.co/HhLC1c3/ostadlogo.png" alt="logo">
+        </a>
+      </div>
+      <div class="visit">
+        <a href="https://ostad.app/">Visit Us</a>
+      </div>
+    </div>
+    </header>
+
+    <section>
+      <div class="container section-container">
+        <!-- form container -->
+        <div class="form-container">
+          <h2>Add Note</h2>
+          <hr />
+          <form>
+            <input type="text" id="note-title" placeholder="Note title" />
+            <textarea
+              id="note-text"
+              cols="30"
+              rows="10"
+              placeholder="Note details"
+            ></textarea>
+            <button id="add-btn" class="btn btn-danger btn-lg">Add Note</button>
+          </form>
+        </div>
+
+        <!-- notes container -->
+        <div class="notes-container">
+          <div class="container">
+            <div class="notes-header">
+              <h2>Your Notes</h2>
+              <button class="clear note-btn">Delete all notes</button>
+            </div>
+            <hr />
+
+            <div id="notes">
+              <!-- <div class="note">
+                <div class="note-cta">
+                  <p class="note-counter">Note 1</p>
+                  <div class="note-cta-btn">
+                    <button class="note-btn">
+                      <i class="fas fa-trash"></i> Delete
+                    </button>
+                    <button class="note-btn edit-btn">
+                      <i class="fas fa-edit"></i> Edit
+                    </button>
+                  </div>
+                </div>
+                <hr />
+                <h3 class="note-title">Title: Hello</h3>
+                <p class="note-text">This is some content...</p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

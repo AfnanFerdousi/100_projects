@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+    background: url(./images/bg.png) no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff;
+    line-height: 2;
+}
+
+#countdown {
+    background-color: rgba(0,0,0,.4);
+    padding: 20px;
+    font-size: 45px;
+    color: #fff;
+    border-radius: 5px;
+
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0px 5px 10px #ddd;
+}
+.visit {
+  font-size: 20px;
+  font-weight: 700;
+}
+.visit a {
+  color: #333;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password strength indicator</title>
+    <link rel="icon"
+      href="https://scontent.fzyl1-1.fna.fbcdn.net/v/t39.30808-6/326292213_1233273087600760_3847057262609278010_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFUqAs-RQCvyc_yN-EOLQqPMmrGBANemdAyasYEA16Z0FcTxavILGK0UyWO89OJj0XpcBJ0dyKdxkHMJaynxsEl&_nc_ohc=OjCmCBuPgTsAX-W2-NQ&_nc_ht=scontent.fzyl1-1.fna&oh=00_AfAIJKG0pUbKJ1Zqx1kvTeWIpc6eN-ZYQ_BgzIpq5a6D2g&oe=63F4D464"
+      type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>      
+      <div class="main">
+      <div class="container box">
+        <form action="" id="form">
+          <h2>Create an Account</h2>
+
+          <div class="form-control">
+            <label for="">Password</label>
+            <input type="password" id="password" placeholder="Enter Password" />
+            <small>Error Message</small>
+
+            <!-- Eye Icon -->
+            <span class="show-pass">
+              <i class="fas fa-eye" id="eye"></i>
+            </span>
+
+            <!-- Progress Bar -->
+            <div class="progress">
+              <div class="progress-bar" id="password-strength"></div>
+            </div>
+
+            <!-- List -->
+            <ul class="form-list">
+              <li>
+                <span class="low-upper-case">
+                  <i class="fas fa-circle"></i>
+                  &nbsp; Lowercase & Uppercase
+                </span>
+              </li>
+              <li>
+                <span class="number">
+                  <i class="fas fa-circle"></i>
+                  &nbsp; Number (0-9)
+                </span>
+              </li>
+              <li>
+                <span class="special-char">
+                  <i class="fas fa-circle"></i>
+                  &nbsp; Special Character (!@#$%^&*)
+                </span>
+              </li>
+              <li>
+                <span class="eight-char">
+                  <i class="fas fa-circle"></i>
+                  &nbsp; At least 8 Character
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <button>Submit</button>
+        </form>
+      </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>

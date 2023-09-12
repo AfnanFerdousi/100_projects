@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="icon"
+      href="https://scontent.fzyl1-1.fna.fbcdn.net/v/t39.30808-6/326292213_1233273087600760_3847057262609278010_n.png?_nc_cat=1&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFUqAs-RQCvyc_yN-EOLQqPMmrGBANemdAyasYEA16Z0FcTxavILGK0UyWO89OJj0XpcBJ0dyKdxkHMJaynxsEl&_nc_ohc=OjCmCBuPgTsAX-W2-NQ&_nc_ht=scontent.fzyl1-1.fna&oh=00_AfAIJKG0pUbKJ1Zqx1kvTeWIpc6eN-ZYQ_BgzIpq5a6D2g&oe=63F4D464"
+      type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/1935d064dd.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section
+      <div class="main">
+      <div class="container box">
+        <h1>Password Generator</h1>
+
+        <div class="p-header">
+          <input name="password" placeholder="password" type="text" id="password" />
+          <button class="copy" id="copy">Copy</button>
+        </div>
+
+        <div class="p-body">
+          <div class="form-field">
+            <label for="p-length">Password Length</label>
+            <input type="number" id="p-length" value="12" min="8" max="30" />
+          </div>
+          <div class="form-field">
+            <label for="p-uppercase">Include Uppercase</label>
+            <input type="checkbox" checked id="p-uppercase" />
+          </div>
+          <div class="form-field">
+            <label for="p-lowercase">Include Lowercase</label>
+            <input type="checkbox" id="p-lowercase" />
+          </div>
+          <div class="form-field">
+            <label for="p-number">Include Number</label>
+            <input type="checkbox" id="p-number" />
+          </div>
+          <div class="form-field">
+            <label for="p-symbol">Include Symbol</label>
+            <input type="checkbox" id="p-symbol" />
+          </div>
+          <button id="submit">Generate Password</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

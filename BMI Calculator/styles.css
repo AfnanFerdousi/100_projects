@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+
+:root {
+  --white: #fff;
+  --black: #1c2b2d;
+  --blue: #31326f;
+  --light-blue: #005490;
+  --color-primary: #9d0191;
+  --color-sec: #db6400;
+  --grey: #eee;
+  --dark-grey: #222831;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: var(--grey);
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 6rem auto;
+  padding: 0 20px;
+}
+
+/* Start here */
+section {
+  height: 100vh;
+}
+
+.box {
+  /* width: 40rem; */
+  background-color: #ffffd9;
+  padding: 2rem;
+  color: var(--white);
+  box-shadow: 0px 10px 20px 20px #e0e0e0;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #333;
+}
+
+form {
+  padding: 1rem 0;
+  font-size: 1.6rem;
+}
+
+form > * {
+  padding-bottom: 1rem;
+}
+form input{
+  border: 2px solid #ffc000;
+}
+form input,
+.btn {
+  padding: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+.calc{
+  margin-top: 2rem;
+}
+.btn {  
+  /* color: #ffc000; */
+  background-color: #ffc000;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.result {
+  padding: 1rem;
+}
+
+.reset {
+  padding: 1rem;
+  margin: 5px 0;
+  display: none;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  box-shadow: 0px 5px 10px #ddd;
+}
+.visit {
+  font-size: 20px;
+  font-weight: 700;
+}
+.visit a {
+  color: #333;
+}
