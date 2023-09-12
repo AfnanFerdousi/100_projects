@@ -3,8 +3,7 @@ const note = document.querySelector(".key-pressed")
 
 window.addEventListener("keydown", playNote)
 
-function playNote(e) {
-  console.log(e)
+function playNote(e){
   const audio = document.querySelector(`audio[data-key="${e?.keyCode}"]`)
   const key = document.querySelector(`.key[data-key="${e?.keyCode}"]`)
 
@@ -22,4 +21,3 @@ function removeTransition(e){
   if(e?.propertyName !== "transform") return;
   this.classList.remove("playing")
 }
-
