@@ -5,7 +5,6 @@ const upButton = document.querySelector('.up-button')
 const downButton = document.querySelector('.down-button')
 const slidesLength = slideLeft.querySelectorAll('div').length
 
-console.log(slidesLength)
 
 let activeSlideIndex = 0;
 
