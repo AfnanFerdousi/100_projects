@@ -51,15 +51,14 @@ function displayMeals(meals) {
 async function getMealRecipe(e) {
   if (e.target.classList.contains("recipe-btn")) {
     const mealItem = e.target.parentElement.parentElement.dataset.id
+    console.log(e.target.parentElement.parentElement)
     const res = await fetch(`${lookupURL}${mealItem}`);
     const data = await res.json();
-    console.log(data)
     displayRecipe(data.meals[0]);
   }    
 }
 
 function displayRecipe(meal) {
-  console.log(meal)  
   let html = `
       <div class="recipe-img">
       <img src="${meal.strMealThumb}" alt="" />
