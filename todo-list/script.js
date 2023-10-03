@@ -15,8 +15,7 @@ form.addEventListener('submit', (e) => {
 })
 
 function addTodo(todo) {
-    let todoText = input.value
-
+    let todoText = input.value;
     if (todo) {
         todoText = todo.text
     }
@@ -27,32 +26,30 @@ function addTodo(todo) {
             todoEl.classList.add('completed')
         }
 
-        todoEl.innerText = todoText
+        todoEl.innerText = todoText;
 
         todoEl.addEventListener('click', () => {
             todoEl.classList.toggle('completed')
             updateLS()
         })
-
         todoEl.addEventListener('contextmenu', (e) => {
             e.preventDefault()
-
             todoEl.remove()
             updateLS()
         })
 
+
         todosUL.appendChild(todoEl)
-
         input.value = ''
-
         updateLS()
     }
 }
 
+
 function updateLS() {
     todosEl = document.querySelectorAll('li')
 
-    const todos = []
+    const todos = [];
 
     todosEl.forEach(todoEl => {
         todos.push({
@@ -61,5 +58,5 @@ function updateLS() {
         })
     })
 
-    localStorage.setItem('todos', JSON.stringify(todos))
+    localStorage.setItem("todos", JSON.stringify(todos))
 }
