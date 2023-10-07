@@ -28,10 +28,13 @@ function addTodo(todo) {
 
         todoEl.innerText = todoText;
 
+        // left click
         todoEl.addEventListener('click', () => {
             todoEl.classList.toggle('completed')
             updateLS()
         })
+
+        // right click
         todoEl.addEventListener('contextmenu', (e) => {
             e.preventDefault()
             todoEl.remove()
